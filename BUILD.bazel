@@ -2,11 +2,10 @@ cc_library(
     name = "tree-sitter-typescript",
     srcs = ["typescript/src/parser.c",
 	    "typescript/src/scanner.c",
-	    "common/scanner.h",
+	    "typescript/src/scanner.h",
             "typescript/src/tree_sitter/alloc.h",
             "typescript/src/tree_sitter/array.h",
             "typescript/src/tree_sitter/parser.h"],
     hdrs = ["bindings/c/tree-sitter-typescript.h"],
-    copts = ["-Itypescript/src/"],
     visibility = ["//visibility:public"]
 )
